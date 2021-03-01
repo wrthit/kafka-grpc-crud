@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.grpc.kafka.example.protocrud;
+
+enum LogType {
+    INFO = 0;
+    DEBUG = 1;
+    WARNING = 2;
+    ERROR = 3;
+}
+
+message Notification {
+    string service = 1;
+    string class = 2;
+    LogType type = 3;
+    string message = 4;
+}

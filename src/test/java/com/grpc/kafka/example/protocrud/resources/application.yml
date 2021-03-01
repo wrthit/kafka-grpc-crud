@@ -1,0 +1,6 @@
+spring:
+    jackson:
+        serialization:
+            fail-on-empty-beans: false
+    kafka:
+        bootstrap-servers: ${spring.embedded.kafka.brokers}
